@@ -1,0 +1,48 @@
+1.  we use object when we have give different properties .
+    eg.  const obj ={
+          firstName : "rishabh"
+          id: 16             
+                  }
+
+
+2.  we use loop when we have to repeat  code for certain time period.
+
+3. branching is use when we have more than one case and we have to execute one at a time. 
+
+
+4. array.foreach()  returns nothing i.e undefined
+   const arr = [1,2,3,4,5]
+
+    const result = arr.forEach((curElem) =>{
+      return curElem
+    })
+    console.log(result);        //undefined
+
+
+ 
+5. array.find()   sees the condition and return first truthy value 
+   
+    const obj1 = [
+    {
+        name : "era",
+        id : 16,
+        gender:"female"
+    },
+    {
+        name : "rishabh",
+        id : 8,
+        gender:"male"
+    },
+    {
+        name : "manish",
+        id : 14,
+        gender:"male"
+    },
+    
+
+   ]
+
+   const arr = obj1.find((curElem)=>{
+      return curElem.gender === "male"
+   })
+   console.log(arr);              //{name: 'rishabh', id: 8, gender: 'male'}
